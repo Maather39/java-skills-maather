@@ -1,6 +1,6 @@
 public class PayrollCalculator {
 
-    // ✅ 1. حساب الراتب الأسبوعي حسب نوع الموظف
+
     public static double calculateWeeklyPay(String employeeType, double hoursWorked, double hourlyRate) {
         double pay = 0;
 
@@ -34,7 +34,7 @@ public class PayrollCalculator {
         return pay;
     }
 
-    // ✅ 2. حساب الضريبة
+
     public static double calculateTaxDeduction(double grossPay, boolean hasHealthInsurance) {
         double taxRate;
 
@@ -53,7 +53,7 @@ public class PayrollCalculator {
         return tax;
     }
 
-    // ✅ 3. معالجة بيانات مجموعة موظفين
+
     public static void processPayroll(String[] employeeTypes, double[] hours, double[] rates, String[] names) {
         if (employeeTypes.length != hours.length || hours.length != rates.length || rates.length != names.length) {
             System.out.println("Error: Mismatched array lengths.");
@@ -94,7 +94,7 @@ public class PayrollCalculator {
         System.out.println("Employees with Overtime: " + overtimeCount);
     }
 
-    // ✅ 4. Main method للاختبار
+
     public static void main(String[] args) {
         String[] types = {"FULL_TIME", "PART_TIME", "CONTRACTOR", "INTERN", "FULL_TIME"};
         double[] hours = {45, 20, 35, 15, 50};
