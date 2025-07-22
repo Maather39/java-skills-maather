@@ -1,31 +1,31 @@
 public class ShoppingCart {
 
-    // ✅ حساب السعر الكلي مع الخصم حسب نوع العميل
+
     public static double calculateTotal(double[] prices, String customerType) {
         double total = 0;
 
-        // جمع كل الأسعار
+
         for (double price : prices) {
             total += price;
         }
 
-        // تطبيق الخصم
+
         switch (customerType) {
             case "PREMIUM":
-                total *= 0.9;  // 10% خصم
+                total *= 0.9;  //
                 break;
             case "VIP":
-                total *= 0.8;  // 20% خصم
+                total *= 0.8;
                 break;
             case "REGULAR":
             default:
-                break; // لا خصم
+                break;
         }
 
         return total;
     }
 
-    // ✅ إيجاد أغلى منتج
+
     public static double findMostExpensive(double[] prices) {
         if (prices.length == 0) return 0;
 
@@ -38,7 +38,7 @@ public class ShoppingCart {
         return max;
     }
 
-    // ✅ عدد العناصر فوق حد معين
+
     public static int countExpensiveItems(double[] prices, double threshold) {
         int count = 0;
         for (double price : prices) {

@@ -1,15 +1,15 @@
 public class VisitorCounter {
-    // static = مشترك بين كل الزوار
+
     private static int totalVisitors = 0;
 
-    // non-static = يخص كل زائر
+
     private int sessionVisits;
     private String visitorName;
 
     public VisitorCounter(String name) {
         this.visitorName = name;
         this.sessionVisits = 0;
-        totalVisitors++; // زيادة عدد الزوار الإجمالي
+        totalVisitors++;
     }
 
     public void recordVisit() {
